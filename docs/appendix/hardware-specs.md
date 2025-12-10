@@ -2,7 +2,7 @@
 
 This appendix provides detailed hardware specifications for the different lab tier options mentioned in Chapter 15, along with current purchase links and pricing information for 2026.
 
-## Budget Lab Tier (<$1k)
+## Budget Lab Tier (&lt;$1k)
 
 The budget lab tier provides essential components for basic ROS 2 development and simulation work. This tier is suitable for students who want to learn the fundamentals without significant hardware investment.
 

@@ -119,7 +119,7 @@ The script generates a comprehensive report including:
 #### Performance Claims
 - "The perception system runs at ≥15 Hz"
 - "Control updates occur at 100 Hz"
-- "The system maintains <50ms latency"
+- "The system maintains &lt;50ms latency"
 
 ### Verification Methods
 
@@ -282,7 +282,7 @@ To ensure the 98% accuracy requirement is met:
 
 ### Target Metrics
 - **≥98% Factual Accuracy**: Overall accuracy requirement
-- **<2% Error Rate**: Maximum acceptable error rate
+- **&lt;2% Error Rate**: Maximum acceptable error rate
 - **100% Critical Claims Validated**: All critical information verified
 - **Zero Safety Procedure Errors**: Perfect safety procedure accuracy
 

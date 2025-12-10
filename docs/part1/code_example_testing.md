@@ -14,8 +14,8 @@ This document outlines the process for testing all code examples on target hardw
 
 ### Performance Standards
 - **Minimum Frequency**: ≥15 Hz for real-time operation
-- **Maximum Memory**: <2GB RAM consumption
-- **Maximum CPU**: <80% average CPU usage
+- **Maximum Memory**: &lt;2GB RAM consumption
+- **Maximum CPU**: &lt;80% average CPU usage
 - **Target Platform**: Jetson Orin Nano 8GB
 
 ### Hardware Specifications

@@ -216,9 +216,11 @@ Whole-body control systems can be integrated with ROS using:
 
 Model Predictive Control extends whole-body control by optimizing over a prediction horizon:
 
+```
 min_{x(·), u(·)} Σ_{k=0}^{N-1} l(x_k, u_k) + l_N(x_N)
 subject to: x_{k+1} = f(x_k, u_k)
            g(x_k, u_k) ≤ 0
+```
 
 MPC is particularly useful for:
 - Predictive balance control

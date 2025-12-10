@@ -72,9 +72,7 @@ const sidebars = {
         'factual-accuracy',
         'release-notes',
         'final-documentation',
-        'appendix/hardware-specs',
-        'appendix/code-references',
-        'appendix/troubleshooting'
+        'appendix/hardware-specs'
       ],
     }
   ],

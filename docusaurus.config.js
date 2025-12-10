@@ -21,7 +21,7 @@ const config = {
   // GitHub pages deployment config.
   organizationName: 'samiceto',
   projectName: 'humenoid_robot', // Your repository name
-  deploymentBranch: 'gh-pages',
+  deploymentBranch: 'main',
   // trailingSlash: false,
 
   // GitHub Pages configuration
@@ -69,29 +69,7 @@ const config = {
   ],
 
   plugins: [
-    // Plugin for search functionality
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-        id: 'book',
-        path: 'docs',
-        routeBasePath: '/',
-        sidebarPath: './sidebars.js',
-        editUrl:
-          'https://github.com/samiceto/humenoid_robot/tree/main/',
-      },
-    ],
-    // Plugin for additional functionality
-    [
-      '@docusaurus/plugin-client-redirects',
-      {
-        fromExtensions: ['html', 'htm'],
-        toExtensions: ['mdx', 'md'],
-        redirects: [
-          // Add redirects if needed
-        ],
-      },
-    ],
+    // Removed duplicate docs plugin - already configured in preset above
   ],
 
   themeConfig:
@@ -199,28 +177,15 @@ const config = {
         darkTheme: prismThemes.dracula,
         additionalLanguages: ['python', 'bash', 'json', 'yaml', 'cpp', 'docker', 'cmake', 'urdf', 'sdf'],
       },
-      algolia: {
-        // The application ID provided by Algolia
-        appId: process.env.ALGOLIA_APP_ID,
-        // Public API key: it is safe to commit it
-        apiKey: process.env.ALGOLIA_SEARCH_API_KEY,
-        indexName: 'humenoid_robot',
-        contextualSearch: true,
-        searchPagePath: 'search',
-        // Optional: see doc for more details
-        searchParameters: {},
-        // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
-        // externalUrlRegex: 'external\\.example\\.com|thirdparty\\.example\\.com',
-        // Optional: Replace parts of the item URLs from Algolia. Useful when using the same search index for multiple deployments using a different baseUrl. You can use regexp or string in the `from` param. For example: localhost:3000 vs myCompany.com/docs
-        // replaceSearchResultPathname: {
-        //   from: '/docs/', // or as RegExp: /\/docs\//
-        //   to: '/',
-        // },
-        // Optional: Algolia search parameters
-        // searchParameters: {},
-        // Optional: path for search page that enabled by default (`false` to disable it)
-        // searchPagePath: 'search',
-      },
+      // Algolia search - commented out until credentials are configured
+      // Uncomment and configure when you set up Algolia DocSearch
+      // algolia: {
+      //   appId: process.env.ALGOLIA_APP_ID,
+      //   apiKey: process.env.ALGOLIA_SEARCH_API_KEY,
+      //   indexName: 'humenoid_robot',
+      //   contextualSearch: true,
+      //   searchPagePath: 'search',
+      // },
       metadata: [
         {name: 'keywords', content: 'robotics, AI, humanoid, ROS, Isaac Sim, NVIDIA, physical AI, machine learning'},
         {name: 'author', content: 'Physical AI & Humanoid Robotics Course Team'},

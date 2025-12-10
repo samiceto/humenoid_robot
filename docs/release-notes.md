@@ -71,7 +71,7 @@ The course utilizes the following technology stack:
 - **Keyboard Navigation**: Full keyboard accessibility
 
 #### Hardware Support
-- **Budget Tier**: <$1k for basic learning
+- **Budget Tier**: &lt;$1k for basic learning
 - **Mid-range Tier**: $3-5k for advanced development
 - **Premium Tier**: $15k+ for full humanoid robotics
 - **Cloud Option**: NVIDIA Omniverse fallback for simulation
