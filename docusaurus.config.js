@@ -13,14 +13,14 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://your-book-username.github.io',
+  url: 'https://samiceto.github.io', // TODO: Replace with your actual GitHub username
   // Set the /<base>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/humenoid_robot/', // GitHub Pages serves from /<repository-name>/
 
   // GitHub pages deployment config.
-  organizationName: 'your-book-username', // Usually your GitHub org/user name.
-  projectName: 'humanoid-robotics-book', // Usually your repo name.
+  organizationName: 'samiceto', // TODO: Replace with your actual GitHub username
+  projectName: 'humenoid_robot', // Your repository name
   deploymentBranch: 'gh-pages',
   trailingSlash: false,
 
@@ -47,7 +47,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/your-book-username/humanoid-robotics-book/tree/main/',
+            'https://github.com/[YOUR-GITHUB-USERNAME]/humenoid_robot/tree/main/',
           routeBasePath: '/', // Serve docs at root
           exclude: [], // Include all docs
           // Configure the docs plugin
@@ -59,7 +59,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/your-book-username/humanoid-robotics-book/tree/main/',
+            'https://github.com/[YOUR-GITHUB-USERNAME]/humenoid_robot/tree/main/',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -78,7 +78,7 @@ const config = {
         routeBasePath: '/',
         sidebarPath: './sidebars.js',
         editUrl:
-          'https://github.com/your-book-username/humanoid-robotics-book/tree/main/',
+          'https://github.com/[YOUR-GITHUB-USERNAME]/humenoid_robot/tree/main/',
       },
     ],
     // Plugin for additional functionality
@@ -119,7 +119,7 @@ const config = {
             position: 'right',
           },
           {
-            href: 'https://github.com/your-book-username/humanoid-robotics-book',
+            href: 'https://github.com/[YOUR-GITHUB-USERNAME]/humenoid_robot',
             label: 'GitHub',
             position: 'right',
           },
@@ -187,7 +187,7 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/your-book-username/humanoid-robotics-book',
+                href: 'https://github.com/[YOUR-GITHUB-USERNAME]/humenoid_robot',
               },
             ],
           },
@@ -204,7 +204,7 @@ const config = {
         appId: process.env.ALGOLIA_APP_ID || 'YOUR_APP_ID',
         // Public API key: it is safe to commit it
         apiKey: process.env.ALGOLIA_SEARCH_API_KEY || 'YOUR_SEARCH_API_KEY',
-        indexName: 'humanoid-robotics-book',
+        indexName: 'humenoid_robot',
         contextualSearch: true,
         searchPagePath: 'search',
         // Optional: see doc for more details
