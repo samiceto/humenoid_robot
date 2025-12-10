@@ -13,16 +13,16 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://samiceto.github.io', // TODO: Replace with your actual GitHub username
+  url: 'https://samiceto.github.io',
   // Set the /<base>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/humenoid_robot/', // GitHub Pages serves from /<repository-name>/
 
   // GitHub pages deployment config.
-  organizationName: 'samiceto', // TODO: Replace with your actual GitHub username
+  organizationName: 'samiceto',
   projectName: 'humenoid_robot', // Your repository name
   deploymentBranch: 'gh-pages',
-  trailingSlash: false,
+  // trailingSlash: false,
 
   // GitHub Pages configuration
   trailingSlash: undefined, // Use undefined for auto-detection
@@ -47,7 +47,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/[YOUR-GITHUB-USERNAME]/humenoid_robot/tree/main/',
+            'https://github.com/samiceto/humenoid_robot/tree/main/',
           routeBasePath: '/', // Serve docs at root
           exclude: [], // Include all docs
           // Configure the docs plugin
@@ -59,7 +59,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/[YOUR-GITHUB-USERNAME]/humenoid_robot/tree/main/',
+            'https://github.com/samiceto/humenoid_robot/tree/main/',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -78,7 +78,7 @@ const config = {
         routeBasePath: '/',
         sidebarPath: './sidebars.js',
         editUrl:
-          'https://github.com/[YOUR-GITHUB-USERNAME]/humenoid_robot/tree/main/',
+          'https://github.com/samiceto/humenoid_robot/tree/main/',
       },
     ],
     // Plugin for additional functionality
@@ -119,7 +119,7 @@ const config = {
             position: 'right',
           },
           {
-            href: 'https://github.com/[YOUR-GITHUB-USERNAME]/humenoid_robot',
+            href: 'https://github.com/samiceto/humenoid_robot',
             label: 'GitHub',
             position: 'right',
           },
@@ -187,7 +187,7 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/[YOUR-GITHUB-USERNAME]/humenoid_robot',
+                href: 'https://github.com/samiceto/humenoid_robot',
               },
             ],
           },
@@ -201,9 +201,9 @@ const config = {
       },
       algolia: {
         // The application ID provided by Algolia
-        appId: process.env.ALGOLIA_APP_ID || 'YOUR_APP_ID',
+        appId: process.env.ALGOLIA_APP_ID,
         // Public API key: it is safe to commit it
-        apiKey: process.env.ALGOLIA_SEARCH_API_KEY || 'YOUR_SEARCH_API_KEY',
+        apiKey: process.env.ALGOLIA_SEARCH_API_KEY,
         indexName: 'humenoid_robot',
         contextualSearch: true,
         searchPagePath: 'search',
