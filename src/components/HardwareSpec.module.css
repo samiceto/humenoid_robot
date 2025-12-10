@@ -1,0 +1,43 @@
+.hardwareSpec {
+  background-color: white;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem 0;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.hardwareSpecTitle {
+  font-weight: 600;
+  color: var(--robotics-secondary);
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.hardwareSpecTitle::before {
+  content: "🔧";
+  margin-right: 0.5rem;
+}
+
+.hardwareSpecDetails {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.hardwareSpecItem {
+  padding: 0.5rem 0;
+}
+
+.hardwareSpecLabel {
+  font-weight: 500;
+  color: var(--ifm-color-emphasis-800);
+  font-size: 0.9rem;
+}
+
+.hardwareSpecValue {
+  color: var(--ifm-color-emphasis-700);
+  font-weight: 400;
+}

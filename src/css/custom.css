@@ -1,0 +1,539 @@
+/**
+ * Custom CSS for the Physical AI & Humanoid Robotics book
+ */
+
+/* Robotics-themed color scheme with accessibility considerations */
+:root {
+  --ifm-color-primary: #1a5fb4;
+  --ifm-color-primary-dark: #154a8f;
+  --ifm-color-primary-darker: #123f7a;
+  --ifm-color-primary-darkest: #0e3465;
+  --ifm-color-primary-light: #2a71c0;
+  --ifm-color-primary-lighter: #3a82cc;
+  --ifm-color-primary-lightest: #4a93d8;
+
+  /* Additional robotics-themed colors */
+  --robotics-accent: #ff6b35;
+  --robotics-accent-light: #ff8c66;
+  --robotics-accent-dark: #e65c2b;
+  --robotics-secondary: #2e7d32;
+  --robotics-secondary-light: #4caf50;
+  --robotics-secondary-dark: #1b5e20;
+  --robotics-neutral: #546e7a;
+  --robotics-neutral-light: #78909c;
+  --robotics-neutral-dark: #37474f;
+
+  /* Accessibility colors for high contrast mode */
+  --ifm-color-primary-contrast-foreground: #ffffff;
+  --ifm-color-primary-contrast-background: #1a5fb4;
+  --ifm-color-secondary-contrast-foreground: #ffffff;
+  --ifm-color-secondary-contrast-background: #2e7d32;
+
+  --ifm-code-font-size: 95%;
+}
+
+/* WCAG 2.1 AA Compliance: Focus indicators */
+*:focus {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+}
+
+/* WCAG 2.1 AA Compliance: Remove focus indicators only when not needed for accessibility */
+*:focus:not(:focus-visible) {
+  outline: none;
+}
+
+*:focus-visible {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+}
+
+/* WCAG 2.1 AA Compliance: Sufficient color contrast */
+.docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+/* Custom styling for robotics diagrams */
+.diagram-container {
+  text-align: center;
+  margin: 2rem 0;
+  padding: 1rem;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 8px;
+  background-color: var(--ifm-color-emphasis-100);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.robotics-diagram {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+}
+
+.diagram-caption {
+  margin-top: 0.5rem;
+  font-style: italic;
+  color: var(--ifm-color-emphasis-700);
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* Enhanced table styling for hardware specifications - WCAG compliant */
+.doc-markdown table {
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 4px;
+  /* Ensure sufficient contrast */
+  background-color: white;
+}
+
+.doc-markdown table th,
+.doc-markdown table td {
+  padding: 0.75rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  text-align: left;
+  /* Ensure sufficient contrast */
+  color: var(--ifm-color-emphasis-900);
+}
+
+.doc-markdown table th {
+  background-color: var(--ifm-color-emphasis-100);
+  font-weight: 600;
+  color: var(--ifm-color-emphasis-800);
+}
+
+/* Enhanced code block styling for robotics content */
+.docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+/* Custom styling for robotics diagrams */
+.diagram-container {
+  text-align: center;
+  margin: 2rem 0;
+  padding: 1rem;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 8px;
+  background-color: var(--ifm-color-emphasis-100);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.robotics-diagram {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+}
+
+.diagram-caption {
+  margin-top: 0.5rem;
+  font-style: italic;
+  color: var(--ifm-color-emphasis-700);
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* Enhanced table styling for hardware specifications */
+.doc-markdown table {
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 4px;
+}
+
+.doc-markdown table th,
+.doc-markdown table td {
+  padding: 0.75rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  text-align: left;
+}
+
+.doc-markdown table th {
+  background-color: var(--ifm-color-emphasis-100);
+  font-weight: 600;
+  color: var(--ifm-color-emphasis-800);
+}
+
+/* Custom styling for interactive elements - WCAG compliant */
+.code-playground {
+  margin: 1.5rem 0;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.simulation-placeholder {
+  padding: 2rem;
+  text-align: center;
+  background-color: var(--ifm-color-emphasis-100);
+  border: 1px dashed var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+}
+
+.run-button {
+  background-color: var(--ifm-color-primary);
+  color: white;
+  border: 2px solid var(--ifm-color-primary);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-weight: 500;
+  transition: background-color 0.2s, border-color 0.2s;
+  /* WCAG 2.1 AA: Ensure sufficient color contrast and focus indicator */
+  min-height: 44px; /* Minimum touch target size */
+  min-width: 44px;
+}
+
+.run-button:hover {
+  background-color: var(--ifm-color-primary-dark);
+}
+
+.run-button:focus {
+  outline: 2px solid var(--ifm-color-primary-contrast-foreground);
+  outline-offset: 2px;
+}
+
+.run-button:active {
+  background-color: var(--ifm-color-primary-darkest);
+}
+
+/* Enhanced search styling - WCAG compliant */
+.navbar__search-input {
+  border-radius: 4px;
+  border: 2px solid var(--ifm-color-emphasis-300);
+  padding: 0.5rem 1rem;
+  /* WCAG 2.1 AA: Ensure sufficient contrast */
+  background-color: white;
+  color: var(--ifm-color-emphasis-900);
+}
+
+.navbar__search-input:focus {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+  border-color: var(--ifm-color-primary);
+}
+
+/* Custom styling for sidebar categories - WCAG compliant */
+.menu__list-item-collapsible > a {
+  font-weight: 600;
+  color: var(--ifm-color-primary);
+  padding: 0.5rem 0; /* Ensure adequate touch target */
+  text-decoration: none; /* WCAG: Ensure links are distinguishable from surrounding text */
+}
+
+.menu__list-item-collapsible > a:hover,
+.menu__list-item-collapsible > a:focus {
+  color: var(--ifm-color-primary-darker);
+  text-decoration: underline;
+}
+
+/* Custom styling for robotics-specific content blocks */
+.robotics-block {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  border-left: 4px solid var(--ifm-color-primary);
+  background-color: var(--ifm-color-emphasis-100);
+  border-radius: 0 4px 4px 0;
+  /* WCAG 2.1 AA: Ensure sufficient color contrast */
+  color: var(--ifm-color-emphasis-900);
+}
+
+.robotics-block-title {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--ifm-color-primary);
+}
+
+.robotics-block-content {
+  margin-left: 0.5rem;
+}
+
+/* Hardware specification styling - WCAG compliant */
+.hardware-spec {
+  background-color: white;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem 0;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  /* WCAG 2.1 AA: Ensure sufficient color contrast */
+  color: var(--ifm-color-emphasis-900);
+}
+
+.hardware-spec-title {
+  font-weight: 600;
+  color: var(--robotics-secondary);
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.hardware-spec-title::before {
+  content: "🔧";
+  margin-right: 0.5rem;
+}
+
+.hardware-spec-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.hardware-spec-item {
+  padding: 0.5rem 0;
+}
+
+.hardware-spec-label {
+  font-weight: 500;
+  color: var(--ifm-color-emphasis-900); /* WCAG: Ensure sufficient contrast */
+}
+
+.hardware-spec-value {
+  color: var(--ifm-color-emphasis-800); /* WCAG: Ensure sufficient contrast */
+}
+
+/* ROS command styling - WCAG compliant */
+.ros-command {
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 4px;
+  padding: 0.75rem;
+  font-family: monospace;
+  margin: 1rem 0;
+  overflow-x: auto;
+  /* WCAG 2.1 AA: Ensure sufficient color contrast */
+  color: var(--ifm-color-emphasis-900);
+}
+
+.ros-command::before {
+  content: "$ ";
+  color: var(--robotics-accent);
+  font-weight: bold;
+}
+
+/* Simulation environment styling - WCAG compliant */
+.simulation-env {
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4edf5 100%);
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  /* WCAG 2.1 AA: Ensure sufficient color contrast */
+  color: var(--ifm-color-emphasis-900);
+}
+
+.simulation-env-title {
+  font-weight: 600;
+  color: var(--robotics-neutral-dark);
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.simulation-env-title::before {
+  content: "🎮";
+  margin-right: 0.5rem;
+}
+
+/* Chapter introduction styling - WCAG compliant */
+.chapter-intro {
+  background: linear-gradient(135deg, var(--ifm-color-primary-lightest) 0%, #e3f2fd 100%);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  border-left: 4px solid var(--ifm-color-primary);
+  /* WCAG 2.1 AA: Ensure sufficient color contrast */
+  color: var(--ifm-color-emphasis-900);
+}
+
+.chapter-intro-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--ifm-color-primary-darkest);
+  margin-bottom: 0.5rem;
+}
+
+.chapter-intro-subtitle {
+  font-style: italic;
+  color: var(--ifm-color-emphasis-800); /* WCAG: Ensure sufficient contrast */
+  margin-bottom: 1rem;
+}
+
+.chapter-objectives {
+  margin-top: 1rem;
+}
+
+.chapter-objectives-title {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--ifm-color-primary-darker);
+}
+
+.chapter-objective-item {
+  display: flex;
+  align-items: flex-start;
+  margin: 0.5rem 0;
+}
+
+.chapter-objective-item::before {
+  content: "✓";
+  display: inline-block;
+  width: 1.5rem;
+  color: var(--robotics-secondary);
+  font-weight: bold;
+}
+
+/* Code snippet with execution info - WCAG compliant */
+.code-execution {
+  margin: 1.5rem 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  /* WCAG 2.1 AA: Ensure sufficient color contrast */
+  color: var(--ifm-color-emphasis-900);
+}
+
+.code-execution-header {
+  background-color: var(--ifm-color-emphasis-200);
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* WCAG 2.1 AA: Ensure sufficient color contrast */
+  color: var(--ifm-color-emphasis-900);
+}
+
+.code-execution-content {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  /* WCAG 2.1 AA: Ensure sufficient color contrast */
+  color: var(--ifm-color-emphasis-900);
+}
+
+/* Terminal output styling - WCAG compliant (high contrast) */
+.terminal-output {
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+  border-radius: 4px;
+  padding: 1rem;
+  font-family: monospace;
+  overflow-x: auto;
+  margin: 1rem 0;
+  /* WCAG 2.1 AA: Ensure sufficient color contrast */
+  border: 1px solid #444;
+}
+
+.terminal-prompt {
+  color: #569cd6;
+}
+
+.terminal-success {
+  color: #4ec9b0;
+}
+
+.terminal-error {
+  color: #f48771;
+}
+
+/* WCAG 2.1 AA: High contrast mode support */
+@media (prefers-contrast: high) {
+  :root {
+    --ifm-color-primary: #000000;
+    --ifm-color-primary-light: #333333;
+    --ifm-color-primary-lighter: #666666;
+    --ifm-color-primary-lightest: #999999;
+    --robotics-accent: #000000;
+    --robotics-secondary: #000000;
+  }
+
+  .terminal-output {
+    background-color: #ffffff;
+    color: #000000;
+    border: 2px solid #000000;
+  }
+
+  .terminal-prompt {
+    color: #0000ff;
+  }
+
+  .terminal-success {
+    color: #008000;
+  }
+
+  .terminal-error {
+    color: #ff0000;
+  }
+}
+
+/* WCAG 2.1 AA: Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* WCAG 2.1 AA: Focus styling for all interactive elements */
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus,
+[tabindex]:focus {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+}
+
+/* WCAG 2.1 AA: Ensure adequate touch target size */
+a,
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+/* Mobile responsiveness for diagrams and code */
+@media (max-width: 768px) {
+  .diagram-container {
+    padding: 0.5rem;
+  }
+
+  .doc-markdown table {
+    font-size: 0.875rem;
+  }
+
+  .hardware-spec-details {
+    grid-template-columns: 1fr;
+  }
+
+  .chapter-intro {
+    padding: 1rem;
+  }
+
+  /* WCAG 2.1 AA: Ensure adequate touch targets on mobile */
+  a,
+  button,
+  input[type="button"],
+  input[type="submit"],
+  input[type="reset"] {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}

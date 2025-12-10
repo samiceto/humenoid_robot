@@ -1,0 +1,1 @@
+[This is a placeholder file. In a real implementation, this would be an actual PNG image file showing the ROS 2 architecture diagram. The diagram would illustrate the ROS 2 middleware, nodes, topics, services, and communication patterns.]

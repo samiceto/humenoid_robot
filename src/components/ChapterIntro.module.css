@@ -1,0 +1,53 @@
+.chapterIntro {
+  background: linear-gradient(135deg, var(--ifm-color-primary-lightest) 0%, #e3f2fd 100%);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  border-left: 4px solid var(--ifm-color-primary);
+}
+
+.chapterIntroTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--ifm-color-primary-darkest);
+  margin-bottom: 0.5rem;
+}
+
+.chapterIntroSubtitle {
+  font-style: italic;
+  color: var(--ifm-color-emphasis-700);
+  margin-bottom: 1rem;
+}
+
+.chapterObjectives {
+  margin-top: 1rem;
+}
+
+.chapterObjectivesTitle {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--ifm-color-primary-darker);
+}
+
+.chapterObjectivesList {
+  list-style: none;
+  padding-left: 0;
+}
+
+.chapterObjectiveItem {
+  display: flex;
+  align-items: flex-start;
+  margin: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.chapterObjectiveItem::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  width: 1.5rem;
+  color: var(--robotics-secondary);
+  font-weight: bold;
+}

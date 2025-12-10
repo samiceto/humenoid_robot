@@ -1,0 +1,52 @@
+.roboticsBlock {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  border-left: 4px solid var(--ifm-color-primary);
+  background-color: var(--ifm-color-emphasis-100);
+  border-radius: 0 4px 4px 0;
+}
+
+.roboticsBlockTitle {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--ifm-color-primary);
+  display: flex;
+  align-items: center;
+}
+
+.roboticsBlockContent {
+  margin-left: 0.5rem;
+}
+
+/* Different styling for different types of blocks */
+.warning {
+  border-left-color: var(--robotics-accent);
+}
+
+.warning .roboticsBlockTitle {
+  color: var(--robotics-accent-dark);
+}
+
+.note {
+  border-left-color: var(--robotics-secondary);
+}
+
+.note .roboticsBlockTitle {
+  color: var(--robotics-secondary-dark);
+}
+
+.tip {
+  border-left-color: var(--robotics-neutral);
+}
+
+.tip .roboticsBlockTitle {
+  color: var(--robotics-neutral-dark);
+}
+
+.important {
+  border-left-color: #d32f2f;
+}
+
+.important .roboticsBlockTitle {
+  color: #b71c1c;
+}

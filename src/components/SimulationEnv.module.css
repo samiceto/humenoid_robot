@@ -1,0 +1,37 @@
+.simulationEnv {
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4edf5 100%);
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.simulationEnvTitle {
+  font-weight: 600;
+  color: var(--robotics-neutral-dark);
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.simulationEnvTitle::before {
+  content: "🎮";
+  margin-right: 0.5rem;
+}
+
+.simulationEnvDescription {
+  margin-bottom: 1rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.simulationEnvImage {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin: 1rem 0;
+  border: 1px solid #cfd8dc;
+}
+
+.simulationEnvContent {
+  margin-top: 1rem;
+}
