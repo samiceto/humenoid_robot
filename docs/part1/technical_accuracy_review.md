@@ -229,7 +229,7 @@ Content is approved for publication when:
 
 ## Exceptions and Escalation
 
-### Minor Issues (<2% accuracy impact)
+### Minor Issues (&lt;2% accuracy impact)
 - Document and track for future updates
 - Allow publication with noted issues
 - Schedule for next revision cycle

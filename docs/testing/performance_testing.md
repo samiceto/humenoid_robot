@@ -7,8 +7,8 @@ This document outlines the performance testing infrastructure for validating tha
 The Physical AI & Humanoid Robotics course has the following performance requirements:
 
 - **Minimum Frequency**: ≥15 Hz for real-time operation
-- **Maximum Memory**: <2GB RAM consumption
-- **Maximum CPU**: <80% average CPU usage
+- **Maximum Memory**: &lt;2GB RAM consumption
+- **Maximum CPU**: &lt;80% average CPU usage
 - **Minimum Battery Life**: ≥120 minutes for mobile robot operations
 
 ## Testing Infrastructure

@@ -658,11 +658,11 @@ Students will be evaluated on:
 
 ### Assessment Rubric
 
-| Criteria | Excellent (90-100%) | Good (80-89%) | Satisfactory (70-79%) | Needs Improvement (<70%) |
+| Criteria | Excellent (90-100%) | Good (80-89%) | Satisfactory (70-79%) | Needs Improvement (&lt;70%) |
 |----------|-------------------|---------------|---------------------|------------------------|
-| Command Recognition | ≥95% accuracy across all commands | 90-94% accuracy | 80-89% accuracy | <80% accuracy |
+| Command Recognition | ≥95% accuracy across all commands | 90-94% accuracy | 80-89% accuracy | &lt;80% accuracy |
 | System Integration | Seamless integration, no errors | Minor integration issues | Some integration issues | Significant integration issues |
-| Performance | ≥15 Hz, ≤500ms latency | 12-15 Hz, ≤600ms latency | 10-12 Hz, ≤700ms latency | <10 Hz, >700ms latency |
+| Performance | ≥15 Hz, ≤500ms latency | 12-15 Hz, ≤600ms latency | 10-12 Hz, ≤700ms latency | &lt;10 Hz, >700ms latency |
 | Documentation | Comprehensive, clear, well-commented | Good documentation with minor gaps | Adequate documentation | Poor or missing documentation |
 | Problem Solving | Creative solutions, optimization | Good problem-solving approach | Basic problem-solving | Little evidence of problem-solving |
 

@@ -252,7 +252,7 @@ By the end of this course, students will be able to:
 - **Perception Systems**: ≥15 Hz real-time processing
 - **Control Systems**: ≥100 Hz for critical control loops
 - **Simulation**: Real-time or faster physics simulation
-- **Response Times**: <100ms for interactive systems
+- **Response Times**: &lt;100ms for interactive systems
 
 ## Accessibility and Inclusion
 
@@ -293,7 +293,7 @@ The course meets all Web Content Accessibility Guidelines 2.1 AA requirements:
 
 ### Hardware Tiers
 
-#### Budget Tier (<$1k)
+#### Budget Tier (&lt;$1k)
 - Single-board computer (Raspberry Pi 5 recommended)
 - Basic robot platform and sensors
 - Simulation-based learning approach

@@ -6,7 +6,7 @@ This document provides comprehensive research and recommendations for lab setup 
 
 ## Lab Tier Recommendations
 
-### Budget Tier (<$1k) - "Simulation-First" Approach
+### Budget Tier (&lt;$1k) - "Simulation-First" Approach
 
 **Target Audience**: Students with limited hardware budget, focusing on simulation-based learning
 

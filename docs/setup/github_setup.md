@@ -84,7 +84,7 @@ mkdir -p course_materials/datasets
 
 Create initial course-specific files:
 
-```bash
+~~~bash
 # Create main README.md
 cat << 'EOF' > README.md
 # Physical AI & Humanoid Robotics: From Simulated Brains to Walking Bodies
@@ -925,6 +925,7 @@ We will:
 
 Security updates will be released as soon as possible after a vulnerability is confirmed. We will provide appropriate credit to reporters who follow responsible disclosure practices.
 EOF
+~~~
 ```
 
 ## Next Steps
