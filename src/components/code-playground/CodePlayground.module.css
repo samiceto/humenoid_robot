@@ -1,0 +1,156 @@
+.codePlayground {
+  margin: 1.5rem 0;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  background-color: white;
+}
+
+.codePlaygroundHeader {
+  padding: 1rem;
+  background-color: var(--ifm-color-emphasis-100);
+  border-bottom: 1px solid var(--ifm-color-emphasis-300);
+}
+
+.codePlaygroundHeader h3 {
+  margin: 0 0 0.5rem 0;
+  color: var(--ifm-color-primary);
+}
+
+.codePlaygroundHeader p {
+  margin: 0;
+  color: var(--ifm-color-emphasis-700);
+  font-size: 0.9rem;
+}
+
+.editorHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: var(--ifm-color-emphasis-200);
+  border-bottom: 1px solid var(--ifm-color-emphasis-300);
+}
+
+.languageIndicator {
+  font-family: monospace;
+  font-size: 0.8rem;
+  color: var(--ifm-color-emphasis-700);
+  background-color: var(--ifm-color-emphasis-300);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}
+
+.editorControls {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.runButton, .resetButton {
+  background-color: var(--ifm-color-primary);
+  color: white;
+  border: 2px solid var(--ifm-color-primary);
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: background-color 0.2s, border-color 0.2s;
+  min-height: 44px;
+  min-width: 44px;
+}
+
+.runButton:hover, .resetButton:hover {
+  background-color: var(--ifm-color-primary-dark);
+}
+
+.runButton:disabled {
+  background-color: var(--ifm-color-emphasis-300);
+  border-color: var(--ifm-color-emphasis-400);
+  cursor: not-allowed;
+}
+
+.resetButton {
+  background-color: var(--ifm-color-emphasis-700);
+  border-color: var(--ifm-color-emphasis-700);
+}
+
+.resetButton:hover {
+  background-color: var(--ifm-color-emphasis-800);
+}
+
+.codeTextarea {
+  width: 100%;
+  font-family: monospace;
+  font-size: 14px;
+  padding: 1rem;
+  border: none;
+  resize: vertical;
+  min-height: 300px;
+  background-color: #f8f9fa;
+}
+
+.codeTextarea:focus {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: -2px;
+}
+
+.terminalOutput {
+  margin-top: 1rem;
+  border-top: 1px solid var(--ifm-color-emphasis-300);
+}
+
+.terminalHeader {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+  font-family: monospace;
+  font-size: 0.875rem;
+}
+
+.terminalContent {
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+  font-family: monospace;
+  font-size: 0.875rem;
+  padding: 1rem;
+  overflow-x: auto;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.terminalLine {
+  line-height: 1.5;
+  margin: 0.25rem 0;
+}
+
+.terminalLine::before {
+  content: "> ";
+  color: #569cd6;
+}
+
+.playgroundInfo {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: var(--ifm-color-emphasis-100);
+  border-radius: 4px;
+}
+
+.playgroundInfo p {
+  margin: 0.5rem 0;
+}
+
+.playgroundInfo ol {
+  margin: 0.5rem 0;
+  padding-left: 1.5rem;
+}
+
+.inlineCode {
+  background-color: var(--ifm-color-emphasis-200);
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 0.875em;
+}

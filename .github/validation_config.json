@@ -1,0 +1,72 @@
+{
+  "validation_pipeline": {
+    "code_examples": {
+      "enabled": true,
+      "languages": ["python", "cpp", "bash", "yaml", "xml", "urdf", "sdf"],
+      "validation_timeout": 30,
+      "required_patterns": {
+        "python": ["import", "def", "class"],
+        "cpp": ["#include", "#define", "int main"],
+        "bash": ["#!/bin", "source", "export"]
+      }
+    },
+    "links": {
+      "enabled": true,
+      "check_external": false,
+      "timeout": 10
+    },
+    "images": {
+      "enabled": true,
+      "required_alt_text": true,
+      "max_size_mb": 10
+    },
+    "content": {
+      "enabled": true,
+      "forbidden_patterns": [
+        "TODO",
+        "FIXME",
+        "PLACEHOLDER",
+        "WIP"
+      ],
+      "required_headers": ["# ", "## ", "### "],
+      "min_word_count": 100
+    },
+    "formatting": {
+      "enabled": true,
+      "markdown_lint": true,
+      "yaml_validation": true,
+      "json_validation": true
+    },
+    "performance": {
+      "enabled": true,
+      "max_build_time_seconds": 300,
+      "min_success_rate": 0.95
+    }
+  },
+  "ci_cd": {
+    "github_actions": {
+      "enabled": true,
+      "triggers": ["push", "pull_request"],
+      "branches": ["develop", "main"]
+    },
+    "required_checks": [
+      "code_examples_validation",
+      "broken_links_check",
+      "build_success"
+    ]
+  },
+  "reports": {
+    "output_dir": "reports",
+    "formats": ["markdown", "json"],
+    "retention_days": 30
+  },
+  "notifications": {
+    "on_failure": {
+      "enabled": true,
+      "channels": ["email", "github_pr_comment"]
+    },
+    "on_success": {
+      "enabled": false
+    }
+  }
+}

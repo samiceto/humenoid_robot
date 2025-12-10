@@ -1,0 +1,54 @@
+.humanoidDiagramContainer {
+  margin: 1.5rem 0;
+}
+
+.diagramLegend {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: var(--ifm-color-emphasis-100);
+  border-radius: 4px;
+  border-left: 4px solid var(--ifm-color-primary);
+}
+
+.diagramLegend h4 {
+  margin-top: 0;
+  color: var(--ifm-color-primary);
+}
+
+.diagramLegend ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.diagramLegend li {
+  margin: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.jointMarker {
+  color: #e74c3c;
+  font-size: 1.2rem;
+}
+
+.linkMarker {
+  color: #3498db;
+  font-size: 1.2rem;
+}
+
+.actuatorMarker {
+  color: #2ecc71;
+  font-size: 1.2rem;
+}
+
+.sensorMarker {
+  color: #f39c12;
+  font-size: 1.2rem;
+}
+
+.cofMarker {
+  color: #9b59b6;
+  font-size: 1.2rem;
+}

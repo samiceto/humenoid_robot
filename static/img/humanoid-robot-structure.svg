@@ -1,0 +1,46 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#f8f9fa"/>
+
+  <!-- Head -->
+  <circle cx="400" cy="100" r="40" fill="#e0e0e0" stroke="#333" stroke-width="2"/>
+
+  <!-- Torso -->
+  <rect x="375" y="140" width="50" height="150" fill="#e0e0e0" stroke="#333" stroke-width="2"/>
+
+  <!-- Left Arm -->
+  <line x1="375" y1="160" x2="300" y2="180" stroke="#333" stroke-width="8" stroke-linecap="round"/>
+  <line x1="300" y1="180" x2="250" y2="200" stroke="#333" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- Right Arm -->
+  <line x1="425" y1="160" x2="500" y2="180" stroke="#333" stroke-width="8" stroke-linecap="round"/>
+  <line x1="500" y1="180" x2="550" y2="200" stroke="#333" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- Left Leg -->
+  <line x1="385" y1="290" x2="385" y2="400" stroke="#333" stroke-width="8" stroke-linecap="round"/>
+  <line x1="385" y1="400" x2="370" y2="480" stroke="#333" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- Right Leg -->
+  <line x1="415" y1="290" x2="415" y2="400" stroke="#333" stroke-width="8" stroke-linecap="round"/>
+  <line x1="415" y1="400" x2="430" y2="480" stroke="#333" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- Joints (circles) -->
+  <circle cx="375" cy="160" r="5" fill="#e74c3c"/> <!-- Left shoulder -->
+  <circle cx="300" cy="180" r="5" fill="#e74c3c"/> <!-- Left elbow -->
+  <circle cx="425" cy="160" r="5" fill="#e74c3c"/> <!-- Right shoulder -->
+  <circle cx="500" cy="180" r="5" fill="#e74c3c"/> <!-- Right elbow -->
+  <circle cx="385" cy="290" r="5" fill="#e74c3c"/> <!-- Left hip -->
+  <circle cx="415" cy="290" r="5" fill="#e74c3c"/> <!-- Right hip -->
+  <circle cx="385" cy="400" r="5" fill="#e74c3c"/> <!-- Left knee -->
+  <circle cx="415" cy="400" r="5" fill="#e74c3c"/> <!-- Right knee -->
+
+  <!-- Title -->
+  <text x="400" y="550" text-anchor="middle" font-family="Arial" font-size="20" fill="#333">Humanoid Robot Structure</text>
+
+  <!-- Labels -->
+  <text x="400" y="80" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Head</text>
+  <text x="300" y="160" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Left Arm</text>
+  <text x="500" y="160" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Right Arm</text>
+  <text x="385" y="500" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Left Leg</text>
+  <text x="415" y="500" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Right Leg</text>
+</svg>
